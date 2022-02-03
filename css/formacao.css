@@ -1,0 +1,113 @@
+.formacao {
+  background: #121212;
+  color: #fff;
+  padding: 60px 0px 10px 0px;
+}
+
+.formacao-container {
+  max-width: 1300px;
+  margin: 60px 35px;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 80px;
+}
+.coluna-1 {
+  position: relative;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #989898;
+  max-width: 35ch;
+  padding-bottom: 70px;
+}
+.formacao-texto strong {
+  color: #f0f0f0;
+}
+.formacao-texto::before {
+  content: "";
+  width: 90px;
+  right: 1px;
+  border: 3px solid #ade9fc;
+  border-radius: 4px;
+  top: -20px;
+  left: 0px;
+  position: absolute;
+}
+.cursos {
+  text-transform: uppercase;
+  color: #989898;
+  padding: 0 0 15px 30px;
+}
+.cursos::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url("/img/livro.svg") no-repeat center center;
+  left: 0px;
+}
+.lista-cursos {
+  position: relative;
+  color: #f0f0f0;
+  padding-left: 23px;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  list-style: disc;
+  list-style: linear-gradient(180deg, #89d4ec 0%, #1c5d72 100%);
+}
+.lista-cursos li span {
+  color: #989898;
+  right: 20px;
+  position: absolute;
+}
+.lista-cursos li {
+  padding-left: 7px;
+  padding-bottom: 15px;
+}
+.coluna-2 {
+  justify-self: center;
+}
+
+.formacao .subtitulo {
+  margin-bottom: 100px;
+  color: #011e27;
+}
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: end;
+}
+.icones li img {
+  padding: 5px;
+}
+
+@media (max-width: 1000px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    margin: 10px 35px;
+    padding-bottom: 30px;
+  }
+  .formacao .subtitulo {
+    margin-bottom: 30px;
+    color: #f0f0f0;
+  }
+  .coluna-2 {
+    grid-row: 1/1;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .icones li img {
+    height: 18px;
+    width: 18px;
+  }
+  .formacao-container {
+    margin: 0px 35px;
+  }
+}

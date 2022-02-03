@@ -1,0 +1,43 @@
+.footer {
+  background: #000;
+}
+.footer-container {
+  max-width: 1300px;
+  padding: 60px 40px 20px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #989898;
+}
+.footer-contato li {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.footer-contato li a {
+  color: #fff;
+}
+.footer-copy {
+  grid-column: 1/-1;
+  font-size: 1rem;
+  color: #2f2f2f;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
